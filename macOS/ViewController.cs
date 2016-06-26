@@ -30,5 +30,10 @@ namespace macOS
 				// Update the view, if already loaded.
 			}
 		}
+
+		partial void clickButton(NSButton sender)
+		{
+			labelTextField.StringValue += textField.StringValue;
+		}
 	}
 }
