@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "macOS", "macOS\macOS.csproj", "{F398B83D-2EEA-49FA-BD3E-1A289755CA54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pclLibrary", "pclLibrary\pclLibrary.csproj", "{A35B727F-FF6F-4EA8-8418-F7B52CEDE215}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{F398B83D-2EEA-49FA-BD3E-1A289755CA54}.Debug|x86.Build.0 = Debug|x86
 		{F398B83D-2EEA-49FA-BD3E-1A289755CA54}.Release|x86.ActiveCfg = Release|x86
 		{F398B83D-2EEA-49FA-BD3E-1A289755CA54}.Release|x86.Build.0 = Release|x86
+		{A35B727F-FF6F-4EA8-8418-F7B52CEDE215}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A35B727F-FF6F-4EA8-8418-F7B52CEDE215}.Debug|x86.Build.0 = Debug|Any CPU
+		{A35B727F-FF6F-4EA8-8418-F7B52CEDE215}.Release|x86.ActiveCfg = Release|Any CPU
+		{A35B727F-FF6F-4EA8-8418-F7B52CEDE215}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
