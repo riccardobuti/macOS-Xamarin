@@ -5,15 +5,33 @@
 // Manual changes to this file may not be handled correctly.
 //
 using Foundation;
+using System.CodeDom.Compiler;
 
 namespace macOS
 {
-	[Register("ViewController")]
+	[Register ("ViewController")]
 	partial class ViewController
 	{
-		void ReleaseDesignerOutlets()
+		[Outlet]
+		AppKit.NSTextField labelTextField { get; set; }
+
+		[Outlet]
+		AppKit.NSTextField textField { get; set; }
+
+		[Action ("clickButton:")]
+		partial void clickButton (AppKit.NSButton sender);
+		
+		void ReleaseDesignerOutlets ()
 		{
+			if (textField != null) {
+				textField.Dispose ();
+				textField = null;
+			}
+
+			if (labelTextField != null) {
+				labelTextField.Dispose ();
+				labelTextField = null;
+			}
 		}
 	}
 }
-
