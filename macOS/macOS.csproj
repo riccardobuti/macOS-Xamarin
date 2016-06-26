@@ -83,5 +83,11 @@
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pclLibrary\pclLibrary.csproj">
+      <Project>{A35B727F-FF6F-4EA8-8418-F7B52CEDE215}</Project>
+      <Name>pclLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

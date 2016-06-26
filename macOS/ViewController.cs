@@ -2,6 +2,7 @@
 
 using AppKit;
 using Foundation;
+using pclLibrary;
 
 namespace macOS
 {
@@ -33,7 +34,7 @@ namespace macOS
 
 		partial void clickButton(NSButton sender)
 		{
-			labelTextField.StringValue += textField.StringValue;
+			labelTextField.StringValue = pclLibrary.MyClass.Generate(labelTextField.StringValue, textField.StringValue);
 		}
 	}
 }

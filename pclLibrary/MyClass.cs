@@ -6,6 +6,11 @@ namespace pclLibrary
 		public MyClass()
 		{
 		}
+
+		public static string Generate(string oldValue, string newValue)
+		{
+			return oldValue + newValue;
+		}
 	}
 }
 
